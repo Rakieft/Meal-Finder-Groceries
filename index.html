@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Finder & Groceries</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Meal Finder & Groceries</h1>
+        <div class="search-bar">
+            <input type="text" id="ingredient-input" placeholder="Enter ingredient(s)...">
+            <button id="search-btn">Search</button>
+            <button id="random-btn">Random Meal</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="results" class="meal-cards">
+            <!-- Dynamic meal cards will appear here -->
+        </section>
+    </main>
+
+    <!-- Grocery List -->
+    <section id="grocery-section">
+        <h2>Your Grocery List</h2>
+            <ul id="grocery-list">
+                <!-- Items will appear here -->
+            </ul>
+            <input type="text" id="grocery-input" placeholder="Add an item...">
+            <button id="add-grocery-btn">Add Item</button>
+            <button id="clear-grocery-btn">Clear List</button>
+    </section>
+
+    <!-- Favorites -->
+    <section id="favorites-section">
+        <h2>Your Favorite Meals</h2>
+        <div id="favorites-list" class="meal-cards">
+            <!-- Favorite meal cards will appear here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Meal Finder & Groceries</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
