@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header -->
+
+    <!-- HEADER -->
     <header>
         <h1>Meal Finder & Groceries</h1>
+
         <div class="search-bar">
             <input type="text" id="ingredient-input" placeholder="Enter ingredient(s)...">
             <button id="search-btn">Search</button>
@@ -18,74 +20,59 @@
         </div>
 
         <div class="top-buttons">
-    <a href="favorites.html" class="btn-nav">⭐ Favorites</a>
-    <a href="grocery.html" class="btn-nav">🛒 Grocery List</a>
-</div>
+            <a href="favorites.html" class="btn-nav">⭐ Favorites</a>
+            <a href="grocery.html" class="btn-nav">🛒 Grocery List</a>
+        </div>
     </header>
 
-    <!-- Main Content -->
+    <!-- MAIN CONTENT -->
     <main>
         <section id="results" class="meal-cards">
-            <!-- Dynamic meal cards will appear here -->
+            <!-- Meals will be inserted dynamically -->
         </section>
     </main>
 
-    <!-- Grocery List -->
+    <!-- GROCERY LIST SECTION -->
     <section id="grocery-section">
         <h2>Your Grocery List</h2>
-            <ul id="grocery-list">
-                <!-- Items will appear here -->
-            </ul>
-            <input type="text" id="grocery-input" placeholder="Add an item...">
-            <button id="add-grocery-btn">Add Item</button>
-            <button id="clear-grocery-btn">Clear List</button>
+        <ul id="grocery-list"></ul>
+
+        <input type="text" id="grocery-input" placeholder="Add an item...">
+        <button id="add-grocery-btn">Add Item</button>
+        <button id="clear-grocery-btn">Clear List</button>
     </section>
 
-    <!-- Favorites -->
+    <!-- FAVORITES SECTION -->
     <section id="favorites-section">
         <h2>Your Favorite Meals</h2>
-        <div id="favorites-list" class="meal-cards">
-            <!-- Favorite meal cards will appear here -->
-        </div>
+        <div id="favorites-list" class="meal-cards"></div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="footer-modern">
+        <div class="footer-container">
 
-  <div class="footer-container">
+            <!-- About -->
+            <div class="footer-col">
+                <h3>Meal Finder & Groceries</h3>
+                <p>Your smart assistant to discover meals, manage favorites, and build grocery lists effortlessly.</p>
+            </div>
 
-    <!-- LEFT: About -->
-    <div class="footer-col">
-      <h3>Meal Finder & Groceries</h3>
-      <p>Your smart assistant to discover meals, manage favorites, and build grocery lists effortlessly.</p>
-    </div>
+            <!-- Contact -->
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>📧 support@mealfinder.com</p>
+                <p>🌐 www.mealfinder.com</p>
+            </div>
 
-    <!-- MIDDLE: Quick Links -->
-    <!-- <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="favorites.html">⭐ Favorites</a></li>
-        <li><a href="grocery.html">🛒 Grocery List</a></li>
-        <li><a href="filters.html">🔎 Advanced Filters</a></li>
-      </ul>
-    </div> -->
+        </div>
 
-    <!-- RIGHT: Contact -->
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <p><span class="footer-icon">📧</span> support@mealfinder.com</p>
-      <p><span class="footer-icon">🌐</span> www.mealfinder.com</p>
-    </div>
+        <div class="footer-bottom">
+            <p>© 2025 Meal Finder & Groceries — All rights reserved.</p>
+        </div>
+    </footer>
 
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2025 Meal Finder & Groceries — All rights reserved.</p>
-  </div>
-
-</footer>
-    <!-- Script -->
+    <!-- JS -->
     <script src="js/script.js"></script>
 </body>
 </html>
