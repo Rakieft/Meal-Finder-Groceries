@@ -273,23 +273,58 @@ header h1 {
 
 
 /* FOOTER */
-.footer {
-    background: #1e1e1e;
-    color: white;
+/* Modern Footer */
+.footer-modern {
+    background: #111;
+    color: #f0f0f0;
+    padding: 40px 20px 20px;
+    margin-top: 50px;
+    border-top: 4px solid #00c67c;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-col {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.footer-col h3 {
+    color: #00c67c;
+    margin-bottom: 10px;
+}
+
+.footer-col p {
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+.footer-icon {
+    font-size: 1.1rem;
+    margin-right: 6px;
+}
+
+.footer-bottom {
     text-align: center;
-    padding: 20px 10px;
-    margin-top: 40px;
-    border-top: 3px solid #00c67c;
-}
-
-.footer-content p {
-    margin: 5px 0;
-    font-size: 0.95rem;
-}
-
-.footer-small {
-    font-size: 0.8rem;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
     opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        text-align: center;
+    }
 }
 
 /* Responsive */
