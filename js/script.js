@@ -71,6 +71,13 @@ function displayMeals(meals) {
     });
 }
 
+// =========================
+// VIEW MEAL DETAILS
+// =========================
+function viewMealDetails(mealId) {
+    window.location.href = `mealDetails.html?id=${mealId}`;
+}
+
 async function addMealToGrocery(mealId) {
     try {
         const res = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`);
@@ -94,11 +101,6 @@ async function addMealToGrocery(mealId) {
         console.error(error);
         alert('Error adding meal ingredients.');
     }
-}
-
-// Placeholder for viewing meal details (to be implemented)
-function viewMealDetails(mealId) {
-    alert(`Meal ID: ${mealId}\nThis will open meal details page.`);
 }
 
 // Load grocery list from LocalStorage

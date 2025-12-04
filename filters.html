@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Filters | Meal Finder</title>
+  <link rel="stylesheet" href="css/filters.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>Advanced Meal Filters</h1>
+    <a href="index.html" class="back-btn">← Back to home</a>
+  </header>
+
+  <main class="filters-container">
+
+    <!-- CATEGORY FILTER -->
+    <section class="filter-block">
+      <h2>Category</h2>
+      <select id="categoryFilter">
+  <option value="">Loading...</option>
+</select>
+    </section>
+
+    <!-- AREA FILTER -->
+    <section class="filter-block">
+      <h2>Country / Origin</h2>
+      <select id="areaFilter">
+  <option value="">Loading...</option>
+</select>
+    </section>
+
+    <!-- DIET FILTER -->
+    <section class="filter-block">
+      <h2>Dietary Restrictions</h2>
+      <div class="checkbox-group">
+        <label><input type="checkbox" class="diet" value="gluten-free" /> Gluten Free</label>
+        <label><input type="checkbox" class="diet" value="dairy-free" /> Dairy Free</label>
+        <label><input type="checkbox" class="diet" value="vegetarian" /> Vegetarian</label>
+        <label><input type="checkbox" class="diet" value="vegan" /> Vegan</label>
+      </div>
+    </section>
+
+    <!-- CALORIES FILTER -->
+    <section class="filter-block">
+      <h2>Maximum Calories</h2>
+      <input type="number" id="caloriesFilter" placeholder="e.g. 500" min="50" />
+    </section>
+
+    <!-- ACTION BUTTONS -->
+    <div class="buttons">
+      <button id="applyFiltersBtn" class="apply-btn">Apply Filters</button>
+      <button id="resetFiltersBtn" class="reset-btn">Reset</button>
+    </div>
+
+    <!-- RESULTS -->
+    <section id="results" class="results"></section>
+
+  </main>
+
+  <script src="js/filters.js"></script>
+</body>
+</html>

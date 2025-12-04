@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#grocery-section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#grocery-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#grocery-list {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+#grocery-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+}
+
+#grocery-list li button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#grocery-list li button:hover {
+    background-color: #45a049;
+}
+
+#grocery-input {
+    width: calc(100% - 110px);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#add-grocery-btn, #clear-grocery-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFC107;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+#add-grocery-btn:hover, #clear-grocery-btn:hover {
+    background-color: #ffb300;
+}
